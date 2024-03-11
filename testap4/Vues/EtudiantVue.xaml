@@ -32,7 +32,7 @@ HorizontalOptions="Center"
                 <!-- Modèle d'élément pour les données de score -->
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-
+                        <Label Text="{Binding Nom}"/>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
