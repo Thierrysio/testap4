@@ -23,19 +23,19 @@ HorizontalOptions="Center"
             <CollectionView x:Name="MalisteEtudiant">
 
                 <!-- En-tête de la CollectionView pour les titres des colonnes -->
-                <CollectionView.HeaderTemplate>
-                    <DataTemplate>
-                        
-                    </DataTemplate>
-                </CollectionView.HeaderTemplate>
-
+               
                 <!-- Modèle d'élément pour les données de score -->
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Label Text="{Binding Nom}"/>
+                        <StackLayout>
+                        <Label x:Name="a" Text="{Binding Prenom}"/>
+                        <Label x:Name="b" Text="{Binding Nom}"/>
+                        </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+            <Button Text="cliquez" Clicked="Button_Clicked"/>
 
         </VerticalStackLayout>
     </VerticalStackLayout>
