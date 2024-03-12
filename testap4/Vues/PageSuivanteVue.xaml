@@ -8,5 +8,36 @@
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Button Clicked="Button_Clicked"/>
+        <CollectionView x:Name="MalisteProduit">
+
+            <!-- En-tête de la CollectionView pour les titres des colonnes -->
+
+            <!-- Modèle d'élément pour les données de score -->
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <!-- Enveloppez le Label dans un Frame pour la gestion des clics -->
+                        <Frame BackgroundColor="Transparent">
+                            <Label x:Name="a" Text="{Binding NomProduit}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                NumberOfTapsRequired="1"
+                                Tapped="OnNomProduitTapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <StackLayout>
+            <Label x:Name="toto" Text="vide"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="saisir un nom de produit"/>
+            <Entry x:Name="E1"/>
+            <Button Clicked="Button_Clicked_1"/>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
