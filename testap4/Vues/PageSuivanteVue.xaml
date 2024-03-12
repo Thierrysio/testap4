@@ -10,9 +10,6 @@
             HorizontalOptions="Center" />
         <Button Clicked="Button_Clicked"/>
         <CollectionView x:Name="MalisteProduit">
-
-            <!-- En-tête de la CollectionView pour les titres des colonnes -->
-
             <!-- Modèle d'élément pour les données de score -->
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -27,6 +24,7 @@
                                 </Label.GestureRecognizers>
                             </Label>
                         </Frame>
+                        <Label Text="{Binding PointsFidelite}"/>
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

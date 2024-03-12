@@ -9,7 +9,7 @@ namespace testap4
             InitializeComponent();
 
             
-            MainPage = new NavigationPage(new EtudiantVue());
+            MainPage = new NavigationPage(new InscriptionVue());
 
         }
     }
