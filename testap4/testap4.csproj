@@ -70,9 +70,19 @@
 	  <MauiXaml Update="Vues\InscriptionVue.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Vues\moncheck.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Vues\PageSuivanteVue.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Vues\PanierVue.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Modeles\EtudiantVueModele\" />
 	</ItemGroup>
 
 </Project>

@@ -16,6 +16,7 @@ namespace testap4.Modeles
         private string _nomProduit;
         private float _prixProduit;
         private int _pointsFidelite;
+        private bool _isSelected;
         #endregion
 
         #region Constructeurs
@@ -26,6 +27,7 @@ namespace testap4.Modeles
             _nomProduit = nomProduit;
             _prixProduit = prixProduit;
             _pointsFidelite = pointsFidelite;
+            _isSelected = false;
         }
 
         #endregion
@@ -41,7 +43,7 @@ namespace testap4.Modeles
         [JsonProperty("pointsFidelite")] 
         public int PointsFidelite { get => _pointsFidelite; set => _pointsFidelite = value; }
 
-
+        public bool IsSelected { get => _isSelected; set => _isSelected = value; }
         #endregion
 
         #region Methodes
